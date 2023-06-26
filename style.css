@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,16 +21,27 @@ body {
 }
 .navbar-brand {
     text-align: center;
-    width: 100px;
-    height: 34px;
+    /* background-color: blue; */
+    line-height: 34px;
+    border-radius: 5%;
+    width: 110px;
     margin-left: 50px;
-    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-item {
     margin-right: 50px;
     text-align: center;
     padding-right: 5px;
     float: left;
+}
+.navbar-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
 }
 .navbar li {
     float: right;
@@ -40,19 +55,23 @@ body {
 section {
     min-height: 250px;
     margin-top: 100px;
+    scroll-margin-top: 80px;
 }
+
 #hero{
     margin-top: 0px;
-    padding: 2rem 1rem;
     background-position: 0%;
     background-color:#F1F3FF ;
 }
-/* home */
-.container {
-    overflow-x: hidden;
-    max-width: 100%;
 
+.hero-content {
+    padding: 50px !important;
 }
+
+.hero-image{
+    padding: 0 !important;
+}
+
 .title-hero {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -92,9 +111,7 @@ img{
     box-sizing: none;
 }
 /* home */
-
-/* service */
- .title-service {
+.title-service {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -157,36 +174,75 @@ img{
 /* end why us */
 
 /* testimonial */
-.row-carousel {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-  }
-  .gallery {
-    background: #EEE;
-  }
-  .gallery-cell {
-    width: 50%;
-    height: 300px;
-    margin-right: 20px;
-    background-color: yellowgreen;
-    counter-increment: gallery-cell;
-  }
-  .gallery-cell:before {
-    display: block;
+.title-testi {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
     text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
+    margin-bottom: 20px;
+
+}
+.text-testi {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+#card-content {
+ display: inline-block;
+ justify-content: center;
+
+
+}
+.img-fluid {
+    justify-content: center;
+   width: 80px;
+   height: 80px;
+   padding-top: 55px;
+   margin-left: 40px;
+}
+.card-text1 {
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+/* .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
   }
+   */
+  .scroll-content {
+    display: inline-block;
+  }
+.swipe {
+    border-radius: 20px;
+    border: none;
+    width: 25px;
+
+    margin-right: 25px;
+    margin-top: 8px;
+}
+.button-active  {
+    text-align: center;
+}
+.swipe:hover {
+    background-color:#5CB85F;
+}
 /* end testimonial */
 
 /* Lokasi */
 
 .col-md-10 {
     background-color: #0D28A6;
-    width: 1168px;
+    /* width: 1168px; */
     height: 326px;
   }
 .header-lokasi {
@@ -210,7 +266,6 @@ img{
     margin-bottom: 60px;
 }
 .button-lokasi {
-
     font-family:Arial, Helvetica, sans-serif ;
     background-color: #5CB85F;
     color: #FFFFFF;

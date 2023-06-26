@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../challengebinar/images-for-css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-md sticky-top wrapper-navbar ">
     <div class="container-fluid">
-      <a class="navbar-brand d-none d-md-block" href="#hero">Binar</a>
+      <a class="navbar-brand d-none d-md-block  " href="#hero">Binar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,16 +42,18 @@
    
     <!-- Home -->
     <section class="section-hero" id="hero">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-       <div class="col-md-6">
-        <h2 class="title-hero">Sewa & Rental Mobil Terbaik di kawasan Semarang</h2>
-        <p class="text-hero">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-        <button class="hero-button">Mulai Sewa Mobil</button>
-       </div>
-       <div class="col-md-6">
-        <img src="../challengebinar/images-for-css/img_car.png" class="car-hero justify-content-md-end">
-       </div>
+          <div class="col-md-6 hero-content">
+            <h2 class="title-hero">Sewa & Rental Mobil Terbaik di kawasan Semarang</h2>
+            <p class="text-hero">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+            <button class="hero-button">Mulai Sewa Mobil</button>
+          </div>
+          <div class="col-md-6 hero-image">
+            <img src="../challengebinar/images-for-css/img_car.png" class="car-hero justify-content-md-end">
+          </div>
+        </div>  
+      </div>  
     </section>
 
   
@@ -92,220 +95,262 @@
           </div>
         </div>
       </div>
-
-
     </section>
 
 
     <!-- End -->
 
     <!-- Why Us -->
-<section class="whyus" id="whyus">
-    <div class="container">
-      <div class="row">
-        <h3 class="why-title">Why Us ?</h3>
-        <h4 class="why-content">Mengapa harus pilih Binar Car Rental? </h4>
-      </div>
-      <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../challengebinar/images-for-css/icon_complete.png" >
-            <h4 class="title-card">Mobil Lengkap</h4>
-            <p class="text-card">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-          </div>
-          </div>
+    <section class="whyus" id="whyus">
+      <div class="container">
+        <div class="row">
+          <h3 class="why-title">Why Us ?</h3>
+          <h4 class="why-content">Mengapa harus pilih Binar Car Rental? </h4>
         </div>
-      <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="../challengebinar/images-for-css/icon_price.png" >
-              <h4 class="title-card">Harga Murah</h4>
-              <p class="text-card">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
-          </div></div>
-      </div>
-      <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="../challengebinar/images-for-css/icon_24hrs.png" >
-              <h4 class="title-card">Layanan 24 Jam</h4>
-              <p class="text-card">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
-          </div></div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../challengebinar/images-for-css/icon_professional.png" >
-            <h4 class="title-card">Sopir Professional</h4>
-            <p class="text-card">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-        </div></div>
-    </div>
-    </div>
-    </div>
-</section>
-<!-- end why us -->
-
-<!-- Testimonial -->
-
-<section class="testimonial" id="testimonial">
-
-  <div class="row-carousel overflow-hidden">
-      <div class="gallery js-flickity"
-      data-flickity-options='{ "wrapAround": true }'>
-          <div class="gallery-cell">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="../challengebinar/images-for-css/icon_complete.png" >
+                <h4 class="title-card">Mobil Lengkap</h4>
+                <p class="text-card">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+              </div>
+              </div>
           </div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-    </div>
-  </div>
-
-</section>
-
-<!-- end -->
-
-
-<!-- Lokasi -->
-<section class="section-lokasi" id="section-lokasi">
-  <div class="container-lokasi">
-    <div class="row">
-      <div class="col-md-10 offset-md-1">
-        <h2 class="header-lokasi">Sewa Mobil di (Lokasimu) Sekarang!</h2>
-        <p class="text-lokasi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <button class="button-lokasi mx-auto">Mulai Sewa Mobil</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- end -->
-
-<!-- Question -->
-<section class="section-question" id="faq">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="title-question">Frequently Asked Question</h2>
-        <p class="text-question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam suscipit assumenda doloribus veritatis asperiores, reprehenderit alias quia cumque tempora? Perspiciatis animi laudantium rerum quibusdam dolorem. Ipsum velit voluptate sapiente.</p>
-      </div>
-      <div class="col-md-6">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <strong>Apa saja syarat yang dibutuhkan?</strong>
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>-KTP</p>
-                <p>-SIM A</p>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="../challengebinar/images-for-css/icon_price.png" >
+                <h4 class="title-card">Harga Murah</h4>
+                <p class="text-card">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <strong> Berapa hari minimal sewa mobil lepas kunci?</strong>
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Maksimal untuk sewa mobil lepas kunci adalah 7 Hari
+          <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                  <img src="../challengebinar/images-for-css/icon_24hrs.png" >
+                  <h4 class="title-card">Layanan 24 Jam</h4>
+                  <p class="text-card">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <strong>Berapa hari sebelumnya sabaiknya booking sewa mobil?</strong>
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Waktu ideal untuk booking sewa mobil adalah 7 hari sebelum penyewaan
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <strong>Apakah Ada biaya antar-jemput? </strong>
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Untuk antar jemput akan dikenakan biaya apabila jarak tempuh antar lokasi berjarak lebih dari 3km
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-               <strong>Bagaimana jika terjadi kecelakaan? </strong>
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Bila terjadi kecelakaan dengan menggunakan service sopir pribadi kami , biaya pengobatan akan kami tanggung sesuai dengan keadaan yang bersangkutan. apabila terjadi kecelakaan dikarenakan kelalaian pribadi maka biaya akan ditanggung sepenuhnya oleh customer.
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="../challengebinar/images-for-css/icon_professional.png" >
+                <h4 class="title-card">Sopir Professional</h4>
+                <p class="text-card">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- end why us -->
+
+    <!-- Testimonial -->
+    <section class="testimonial" id="testimonial">
+     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="title-testi">Testimonial</h2>
+          <p class="text-testi">Berbagai review positif dari para pelanggan kami</p>
+        </div>
+      </div>
+     </div>
+     <div class="scroll-container" id="cardContainer">
+      <div class="scroll-content d-md-inline-flex" id="cardWrapper">
+        <div class="card mb-3" id="card-content" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../challengebinar/images-for-css/testi3.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
+                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga, esse consequuntur nihil aperiam sapiente nisi est corporis officiis adipisci. Laboriosam officiis, hic animi tenetur libero dolores autem esse quam?</p>
+                <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" id="card-content" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../challengebinar/images-for-css/testi2.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
+                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio, sequi ipsum voluptas quod officia eos pariatur veniam, incidunt doloribus accusamus exercitationem. Accusantium, eos laborum dolores praesentium perspiciatis deserunt quo?</p>
+                <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" id="card-content" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../challengebinar/images-for-css/testi3.png" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
+                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto magnam neque cum, sapiente eum non ipsa rerum praesentium veritatis consequuntur sunt voluptates expedita ut ipsam dolorum provident sequi?</p>
+                <p class="card-text"><small class="text-muted">John Dee 32,Bromo</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-active">
+        <button id="scroll-left" class="swipe"><</button>
+        <button id="scroll-right" class="swipe">></button> 
+      </div>
     </div>
-  </div>
-</section>
-<!-- end -->
 
-<!-- footer -->
-<Footer class="footer-section" id="footer-id">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <p class="title-alamat">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
-        <p class="title-alamat">binarcarrental@gmail.com</p>
-        <p class="title-alamat">081-233-334-808</p>
+    </section>
+    <!-- end -->
+
+    <!-- Lokasi -->
+    <section class="section-lokasi" id="section-lokasi">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <h2 class="header-lokasi">Sewa Mobil di (Lokasimu) Sekarang!</h2>
+            <p class="text-lokasi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="button-lokasi mx-auto">Mulai Sewa Mobil</button>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <a href="#service" class="link-href page-scroll">our service</a>
-        <a href="#whyus" class="link-href page-scroll">Why Us</a>
-        <a href="#testimonial" class="link-href page-scroll">Testimonial</a>
-        <a href="#faq" class="link-href page-scroll">FAQ</a>
+    </section>
+    <!-- end -->
+
+    <!-- Question -->
+    <section class="section-question" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="title-question">Frequently Asked Question</h2>
+            <p class="text-question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam suscipit assumenda doloribus veritatis asperiores, reprehenderit alias quia cumque tempora? Perspiciatis animi laudantium rerum quibusdam dolorem. Ipsum velit voluptate sapiente.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Apa saja syarat yang dibutuhkan?</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>-KTP</p>
+                    <p>-SIM A</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong> Berapa hari minimal sewa mobil lepas kunci?</strong>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Maksimal untuk sewa mobil lepas kunci adalah 7 Hari
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Berapa hari sebelumnya sabaiknya booking sewa mobil?</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Waktu ideal untuk booking sewa mobil adalah 7 hari sebelum penyewaan
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Apakah Ada biaya antar-jemput? </strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Untuk antar jemput akan dikenakan biaya apabila jarak tempuh antar lokasi berjarak lebih dari 3km
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <strong>Bagaimana jika terjadi kecelakaan? </strong>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Bila terjadi kecelakaan dengan menggunakan service sopir pribadi kami , biaya pengobatan akan kami tanggung sesuai dengan keadaan yang bersangkutan. apabila terjadi kecelakaan dikarenakan kelalaian pribadi maka biaya akan ditanggung sepenuhnya oleh customer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <p class="text-sosmed">Connect With Us</p>
-        <a href="" class="logo-sosmed">
-          <img src="../challengebinar/images-for-css/icon_facebook.png" >
-        </a>
-        <a href="" class="logo-sosmed">
-          <img src="../challengebinar/images-for-css/icon_instagram.png">
-        </a>
-        <a href="" class="logo-sosmed">
-          <img src="../challengebinar/images-for-css/icon_twitter.png">
-        </a>
-        <a href="" class="logo-sosmed">
-          <img src="../challengebinar/images-for-css/icon_mail.png">
-        </a>
-        <a href="" class="logo-sosmed">
-          <img src="../challengebinar/images-for-css/icon_twitch.png">
-        </a>
+    </section>
+    <!-- end -->
+
+    <!-- footer -->
+    <Footer class="footer-section" id="footer-id">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="title-alamat">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p class="title-alamat">binarcarrental@gmail.com</p>
+            <p class="title-alamat">081-233-334-808</p>
+          </div>
+          <div class="col-md-3">
+            <a href="#service" class="link-href page-scroll">our service</a>
+            <a href="#whyus" class="link-href page-scroll">Why Us</a>
+            <a href="#testimonial" class="link-href page-scroll">Testimonial</a>
+            <a href="#faq" class="link-href page-scroll">FAQ</a>
+          </div>
+          <div class="col-md-3">
+            <p class="text-sosmed">Connect With Us</p>
+            <a href="" class="logo-sosmed">
+              <img src="../challengebinar/images-for-css/icon_facebook.png" >
+            </a>
+            <a href="" class="logo-sosmed">
+              <img src="../challengebinar/images-for-css/icon_instagram.png">
+            </a>
+            <a href="" class="logo-sosmed">
+              <img src="../challengebinar/images-for-css/icon_twitter.png">
+            </a>
+            <a href="" class="logo-sosmed">
+              <img src="../challengebinar/images-for-css/icon_mail.png">
+            </a>
+            <a href="" class="logo-sosmed">
+              <img src="../challengebinar/images-for-css/icon_twitch.png">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <p class="text-copyright">Copyright Binar 2023</p>
+            <button class="button-copyright">
+              <a href="#hero" class="tag-binar ">Binar</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <p class="text-copyright">Copyright Binar 2023</p>
-        <button class="button-copyright">
-          <a href="#hero" class="tag-binar ">Binar</a>
-        </button>
-      </div>
-    </div>
-  </div>
+    </Footer>
+    <!-- end footer -->
 
-</Footer>
-
-<!-- end footer -->
-
-
-<script src="../challengebinar/images-for-css/bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+<script src="../challengebinar/images-for-css/bootstrap/js/bootstrap.min.js"></script>
 <script src="../challengebinar/images-for-css/bootstrap/js/jquery-3.7.0.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
