@@ -10,6 +10,18 @@ body {
     height: 100%;
 }
 
+
+.link-href {
+    display: block;
+    box-shadow: inset 0 0 0 0 #5CB85F;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.link-href:hover{
+    box-shadow: inset 100px 0 0 0 #5CB85F;
+    color: white;
+}
 .wrapper-navbar {
     background-color: #F1F3FF;
 }
@@ -41,8 +53,8 @@ body {
     align-items: center;
     color: white;
     text-decoration: none;
-
 }
+
 .navbar li {
     float: right;
     position: relative;
@@ -60,7 +72,7 @@ section {
 
 #hero{
     margin-top: 0px;
-    background-position: 0%;
+    background-position: 0%;    
     background-color:#F1F3FF ;
 }
 
@@ -193,18 +205,34 @@ img{
     
 }
 #card-content {
- display: inline-block;
- justify-content: center;
-
+    display: flex;
+    justify-content: center;
+    width: 30%; 
+    height: 100%;
 
 }
 .img-fluid {
-    justify-content: center;
+   display: flex;
+   justify-content: center;
    width: 80px;
    height: 80px;
    padding-top: 55px;
-   margin-left: 40px;
+   margin-left: 25px;
 }
+@media (max-width: 576px) {
+    .img-fluid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 42%;
+    }
+    .card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }
 .card-text1 {
 
     font-size: 14px;
@@ -212,16 +240,12 @@ img{
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-
 }
-/* .scroll-container {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-   */
+
   .scroll-content {
-    display: inline-block;
+      display: inline-block;
   }
+
 .swipe {
     border-radius: 20px;
     border: none;
@@ -232,8 +256,13 @@ img{
 }
 .button-active  {
     text-align: center;
+
 }
-.swipe:hover {
+.swiper-navBtn {
+    border: none;
+    border-radius: 15px;
+}
+.swiper-navBtn:hover {
     background-color:#5CB85F;
 }
 /* end testimonial */
@@ -243,7 +272,7 @@ img{
 .col-md-10 {
     background-color: #0D28A6;
     /* width: 1168px; */
-    height: 326px;
+    height: 340px;
   }
 .header-lokasi {
     color: #FFFFFF;

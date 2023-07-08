@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../challengebinar/images-for-css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="images-for-css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
 </head>
 <body>
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-md sticky-top wrapper-navbar ">
     <div class="container-fluid">
-      <a class="navbar-brand d-none d-md-block  " href="#hero">Binar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand d-none d-md-block" href="#hero">Binar</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" 
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,15 +32,37 @@
             <a class="nav-link active" aria-current="page" href="#service">Our Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#whyus">Why Us</a>
+            <a class="nav-link" href="#whyus">Why Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#testimonial">Testimonial</a>
+            <a class="nav-link" href="#testimonial">Testimonial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="#faq">FAQ</a>
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
         </ul>
+      </div>
+      <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li>
+              <a class="nav-link active" aria-current="page" href="#service">Our Service</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#whyus">Why Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li>
+              <a class="nav-link" href="faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -50,7 +79,7 @@
             <button class="hero-button">Mulai Sewa Mobil</button>
           </div>
           <div class="col-md-6 hero-image">
-            <img src="../challengebinar/images-for-css/img_car.png" class="car-hero justify-content-md-end">
+            <img src="images-for-css/img_car.png" class="car-hero justify-content-md-end">
           </div>
         </div>  
       </div>  
@@ -65,30 +94,30 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img src="../challengebinar/images-for-css/img_service.png" >
+            <img src="images-for-css/img_service.png" >
           </div>
           <div class="col-md-6">
             <h3 class="title-service"> Best Car Rental for any kind of trip in Semarang!</h3>
             <p class="text-service">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
             <ul class="p-0">
               <li class="list-unstyled">
-                <img src="../challengebinar/images-for-css/Group 53.png" >
+                <img src="images-for-css/Group 53.png" >
                 <p class="benefit d-inline-block">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
               </li>
               <li class="list-unstyled">
-                <img src="../challengebinar/images-for-css/Group 53.png" >
+                <img src="images-for-css/Group 53.png" >
                 <p class="benefit d-inline-block">Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
               </li>
               <li class="list-unstyled">
-                <img src="../challengebinar/images-for-css/Group 53.png" >
+                <img src="images-for-css/Group 53.png" >
                 <p class="benefit d-inline-block">Sewa Mobil Jangka Panjang Bulanan </p>
               </li>
               <li class="list-unstyled">
-                <img src="../challengebinar/images-for-css/Group 53.png" >
+                <img src="images-for-css/Group 53.png" >
                 <p class="benefit d-inline-block">Gratis Antar - Jemput Mobil di Bandara</p>
               </li>
               <li class="list-unstyled">
-                <img src="../challengebinar/images-for-css/Group 53.png" >
+                <img src="images-for-css/Group 53.png" >
                 <p class="benefit">Layanan Airport Transfer / Drop In Out</p>
               </li>
             </ul>
@@ -111,7 +140,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <img src="../challengebinar/images-for-css/icon_complete.png" >
+                <img src="images-for-css/icon_complete.png" >
                 <h4 class="title-card">Mobil Lengkap</h4>
                 <p class="text-card">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
               </div>
@@ -120,7 +149,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <img src="../challengebinar/images-for-css/icon_price.png" >
+                <img src="images-for-css/icon_price.png" >
                 <h4 class="title-card">Harga Murah</h4>
                 <p class="text-card">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
               </div>
@@ -129,7 +158,7 @@
           <div class="col-md-3">
             <div class="card">
                 <div class="card-body">
-                  <img src="../challengebinar/images-for-css/icon_24hrs.png" >
+                  <img src="images-for-css/icon_24hrs.png" >
                   <h4 class="title-card">Layanan 24 Jam</h4>
                   <p class="text-card">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
               </div>
@@ -138,7 +167,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <img src="../challengebinar/images-for-css/icon_professional.png" >
+                <img src="images-for-css/icon_professional.png" >
                 <h4 class="title-card">Sopir Professional</h4>
                 <p class="text-card">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
               </div>
@@ -151,65 +180,64 @@
 
     <!-- Testimonial -->
     <section class="testimonial" id="testimonial">
-     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="title-testi">Testimonial</h2>
-          <p class="text-testi">Berbagai review positif dari para pelanggan kami</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="title-testi">Testimonial</h2>
+            <p class="text-testi">Berbagai review positif dari para pelanggan kami</p>
+          </div>
         </div>
       </div>
-     </div>
-     <div class="scroll-container" id="cardContainer">
-      <div class="scroll-content d-md-inline-flex" id="cardWrapper">
-        <div class="card mb-3" id="card-content" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../challengebinar/images-for-css/testi3.png" class="img-fluid rounded-start">
+      <div class="scroll-container swiper" id="cardContainer">
+        <div class="scroll-content d-md-inline-flex swiper-wrapper" id="cardWrapper">
+          <div class="card mb-3 swiper-slide" id="card-content" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images-for-css/testi2.png" class="img-fluid rounded-start">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="images-for-css/Rate.png" alt=""></h5>
+                  <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto magnam neque cum, sapiente eum non ipsa rerum praesentium veritatis consequuntur sunt voluptates expedita ut ipsam dolorum provident sequi??</p>
+                  <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
+                </div>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
-                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga, esse consequuntur nihil aperiam sapiente nisi est corporis officiis adipisci. Laboriosam officiis, hic animi tenetur libero dolores autem esse quam?</p>
-                <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
+          </div>
+          <div class="card mb-3 swiper-slide" id="card-content" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images-for-css/testi3.png" class="img-fluid rounded-start">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="images-for-css/Rate.png" alt=""></h5>
+                  <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto magnam neque cum, sapiente eum non ipsa rerum praesentium veritatis consequuntur sunt voluptates expedita ut ipsam dolorum provident sequi?</p>
+                  <p class="card-text"><small class="text-muted">John Dee 32,Bromo</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 swiper-slide" id="card-content" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images-for-css/testi2.png" class="img-fluid rounded-start">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><img src="images-for-css/Rate.png" alt=""></h5>
+                  <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto magnam neque cum, sapiente eum non ipsa rerum praesentium veritatis consequuntur sunt voluptates expedita ut ipsam dolorum provident sequi?</p>
+                  <p class="card-text"><small class="text-muted">John Dee 32,Bromo</small></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card mb-3" id="card-content" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../challengebinar/images-for-css/testi2.png" class="img-fluid rounded-start">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
-                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio, sequi ipsum voluptas quod officia eos pariatur veniam, incidunt doloribus accusamus exercitationem. Accusantium, eos laborum dolores praesentium perspiciatis deserunt quo?</p>
-                <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" id="card-content" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../challengebinar/images-for-css/testi3.png" class="img-fluid rounded-start">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><img src="../challengebinar/images-for-css/Rate.png" alt=""></h5>
-                <p class="card-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure iusto magnam neque cum, sapiente eum non ipsa rerum praesentium veritatis consequuntur sunt voluptates expedita ut ipsam dolorum provident sequi?</p>
-                <p class="card-text"><small class="text-muted">John Dee 32,Bromo</small></p>
-              </div>
-            </div>
-          </div>
+        <div class="button-active">
+          <button id="scroll-left" class="swipe-left swiper-navBtn"><</button>
+          <button id="scroll-right" class="swipe-right swiper-navBtn">></button> 
         </div>
       </div>
-      <div class="button-active">
-        <button id="scroll-left" class="swipe"><</button>
-        <button id="scroll-right" class="swipe">></button> 
-      </div>
-    </div>
-
     </section>
     <!-- end -->
 
@@ -323,19 +351,19 @@
           <div class="col-md-3">
             <p class="text-sosmed">Connect With Us</p>
             <a href="" class="logo-sosmed">
-              <img src="../challengebinar/images-for-css/icon_facebook.png" >
+              <img src="images-for-css/icon_facebook.png" >
             </a>
             <a href="" class="logo-sosmed">
-              <img src="../challengebinar/images-for-css/icon_instagram.png">
+              <img src="images-for-css/icon_instagram.png">
             </a>
             <a href="" class="logo-sosmed">
-              <img src="../challengebinar/images-for-css/icon_twitter.png">
+              <img src="images-for-css/icon_twitter.png">
             </a>
             <a href="" class="logo-sosmed">
-              <img src="../challengebinar/images-for-css/icon_mail.png">
+              <img src="images-for-css/icon_mail.png">
             </a>
             <a href="" class="logo-sosmed">
-              <img src="../challengebinar/images-for-css/icon_twitch.png">
+              <img src="images-for-css/icon_twitch.png">
             </a>
           </div>
           <div class="col-md-3">
@@ -348,11 +376,12 @@
       </div>
     </Footer>
     <!-- end footer -->
-
+<script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
-<script src="../challengebinar/images-for-css/bootstrap/js/bootstrap.min.js"></script>
-<script src="../challengebinar/images-for-css/bootstrap/js/jquery-3.7.0.min.js"></script>
+<script src="images-for-css/bootstrap/js/bootstrap.min.js"></script>
+<script src="images-for-css/bootstrap/js/jquery-3.7.0.min.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </body>
 </html>
